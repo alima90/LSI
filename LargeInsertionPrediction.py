@@ -16,7 +16,7 @@ print 'python '+'/'.join(sys.argv[0].split('/')[0:-1])+'/2.ret_single_type.py '+
 os.system('python '+'/'.join(sys.argv[0].split('/')[0:-1])+'/2.ret_single_type.py '+sys.argv[1]+' '+sys.argv[2]+' '+name+'.blastn > '+ name+'.blastn.single_type')
 print 'python '+'/'.join(sys.argv[0].split('/')[0:-1])+'/3.blastn_with_reference_genome.py '+reference+' '+name+'.blastn.single_type '+name+'.blastn.single_type.blastn '+sys.argv[3]
 os.system('python '+'/'.join(sys.argv[0].split('/')[0:-1])+'/3.blastn_with_reference_genome.py '+reference+' '+name+'.blastn.single_type '+name+'.blastn.single_type.blastn '+sys.argv[3])
-print 'python '+'/'.join(sys.argv[0].split('/')[0:-1])+'/4-1.ret_indel_candidates.py '+name+'.blastn.single_type.blastn > '+name+'.blastn.single_type.blastn.indel_candidates'
+print 'python '+'/'.join(sys.argv[0].split('/')[0:-1])+'/4.ret_indel_candidates.py '+name+'.blastn.single_type.blastn > '+name+'.blastn.single_type.blastn.indel_candidates'
 os.system('python '+'/'.join(sys.argv[0].split('/')[0:-1])+'/4.ret_indel_candidates.py '+name+'.blastn.single_type.blastn > '+name+'.blastn.single_type.blastn.indel_candidates')
 #print 'python '+'/'.join(sys.argv[0].split('/')[0:-1])+'/5.read_evidence.py '+name+'.blastn.single_type.blastn.indel_candidates '+ bamfile +' '+reference + ' > '+name+'.blastn.single_type.blastn.indel_candidates.read_evidence'
 #os.system('python '+'/'.join(sys.argv[0].split('/')[0:-1])+'/5.read_evidence.py '+name+'.blastn.single_type.blastn.indel_candidates '+ bamfile +' '+reference + ' > '+name+'.blastn.single_type.blastn.indel_candidates.read_evidence')
